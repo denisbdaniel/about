@@ -16,15 +16,19 @@ function showSlides() {
   setTimeout(showSlides, 5000); // Change image every 5 seconds, oh god
 }
 
-const form = document.querySelector('form');
+const form = document.querySelector("form");
 
-form.addEventListener('submit', (event) => {
+form.addEventListener("submit", (event) => {
   event.preventDefault();
   const email = form.querySelector('input[type="email"]').value;
   alert(`Thanks for subscribing with email: ${email}`);
   form.reset();
 });
 
+// Get the menu icon and header links elements
+const menuIcon = document.querySelector(".menu-icon");
+const headerLinks = document.querySelector(".header-links");
 
-
-
+menuIcon.addEventListener("click", function () {
+  headerLinks.classList.toggle("centered");
+});

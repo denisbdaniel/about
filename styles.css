@@ -11,24 +11,28 @@
   --bg-2others: #8b4513;
   --transition-speed: 600ms;
 }
-   
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scrollbar-width: auto;
-    scrollbar-color: var(--bg-v4-bg) var(--bg-v3-bg);
-    }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: auto;
+  scrollbar-color: var(--bg-v4-bg) var(--bg-v3-bg);
+}
 
 body {
-font-family: "Lora", "Cinzel", serif;
-font-weight: 400;
-background: linear-gradient(to right, var(--bg-primary), var(--bg-transition));
-color: var(--text-primary);
-font-size: 14px;
-line-height: 1.5;
-text-align: center;
-margin: 0 auto;
+  font-family: "Lora", "Cinzel", serif;
+  font-weight: 400;
+  background: linear-gradient(
+    to right,
+    var(--bg-background-color),
+    var(--bg-v3-bg)
+  );
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 auto;
 }
 
 h1 {
@@ -37,30 +41,32 @@ h1 {
   display: inline-block;
   border-bottom: 2px solid #716844;
   padding: 0 10px 6px;
-  }
-  
-  h2 {
+}
+
+h2 {
   font-size: 20px;
   font-weight: 700;
-  }
-  
-  h3 {
+}
+
+h3 {
   font-size: 18px;
   font-weight: 700;
-  }
-  
-  h4 {
+}
+
+h4 {
   font-size: 14px;
   font-weight: 700;
-  }
-  
-  p {
+}
+
+p {
   font-size: 20px;
   line-height: 20px;
   margin-top: 0;
-  }
+}
 
-/* Top of the page / Navigation Links*/
+/* Top of the page / Navigation Links */
+/* styles for all screens */
+
 header {
   background-color: #fff;
   position: fixed;
@@ -117,18 +123,61 @@ header:hover {
   left: 0;
 }
 
-@media only screen and (max-width: 768px) {
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 40px;
+  height: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menu-icon__line {
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  transition: all 0.2s ease;
+}
+
+.menu-icon__line:first-child {
+  transform: translateY(-4px);
+}
+
+.menu-icon__line:last-child {
+  transform: translateY(4px);
+}
+
+/* Hide the header links and show the menu icon */
+@media only screen and (max-width: 950px) {
   .header-links {
-    flex-direction: column;
-  }
-
-  .header-links li {
-    padding: 10px 0;
-  }
-
-  .header-links li a::after {
     display: none;
   }
+  .menu-icon {
+    text-align: center;
+    justify-content: center;
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+}
+.header-links.show {
+  text-align: center;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  height: 100%;
+}
+.centered {
+  display: flex;
+  justify-content: center;
 }
 
 /* Introduction Texts, sections */
@@ -147,7 +196,6 @@ header:hover {
 .about-text p {
   margin-bottom: 20px;
 }
-
 
 /* Book Recommendation */
 
@@ -236,6 +284,7 @@ header:hover {
 }
 
 /* Footer Styles */
+/* styles for all screens */
 
 .contact-links {
   margin-bottom: 60px;
@@ -251,11 +300,25 @@ header:hover {
   transition: background-color 0.5s ease 0s;
   color: var(--text-primary);
   margin-bottom: 10px;
-  }
-  
-  .cta:hover {
+}
+
+.cta:hover {
   background-color: var(--bg-shades);
+}
+
+/* styles for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+  .cta {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
+
+  .cta + .cta {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
 
 .upper-footer {
   background-color: var(--bg-v1-bg);
