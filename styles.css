@@ -3,8 +3,8 @@
   --bg-background-color: #ffffff;
   --bg-v1-bg: #eeeeee;
   --bg-v2-bg: #caebec;
-  --bg-v3-bg: #c9c9c9;
-  --bg-v4-bg: #87ceeb;
+  --bg-v3-bg: #b9b9b9;
+  --bg-v4-bg: #999999;
   --bg-v5-bg: #add8e6;
   --bg-shades: #d4af37;
   --bg-others: #f5deb3;
@@ -13,16 +13,17 @@
 }
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline-offset: 2px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
   scrollbar-width: auto;
   scrollbar-color: var(--bg-v4-bg) var(--bg-v3-bg);
 }
 
 body {
-  font-family: "Lora", "Cinzel", serif;
-  font-weight: 400;
+  font-family: "Maven Pro", "Raleway", sans-serif;
   background: linear-gradient(
     to right,
     var(--bg-background-color),
@@ -38,9 +39,6 @@ body {
 h1 {
   font-size: 20px;
   font-weight: 700;
-  display: inline-block;
-  border-bottom: 2px solid #716844;
-  padding: 0 10px 6px;
 }
 
 h2 {
@@ -58,209 +56,16 @@ h4 {
   font-weight: 700;
 }
 
-p {
-  font-size: 20px;
-  line-height: 20px;
-  margin-top: 0;
-}
-
-/* Top of the page / Navigation Links */
-/* styles for all screens */
-
-header {
-  background-color: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  height: 60px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-header:hover {
-  box-shadow: 0px 8px 15px var(--bg-v4-bg);
-}
-
-.header-links {
-  text-align: center;
-  margin: 0 auto;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-  height: 100%;
-}
-
-.header-links li {
-  padding: 20px;
-  position: relative;
-}
-
-.header-links li a {
-  transition: color 0.4s ease 0s;
-  color: #333;
-  font-size: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.header-links li a::after {
-  content: "";
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background-color: var(--bg-shades);
-  transition: width 0.4s ease 0s, left 0.4s ease 0s;
-}
-
-.header-links li a:hover::after {
-  width: 100%;
-  left: 0;
-}
-
-.menu-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 40px;
-  height: 30px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
-
-.menu-icon__line {
-  width: 100%;
-  height: 2px;
-  background-color: #333;
-  transition: all 0.2s ease;
-}
-
-.menu-icon__line:first-child {
-  transform: translateY(-4px);
-}
-
-.menu-icon__line:last-child {
-  transform: translateY(4px);
-}
-
-/* Hide the header links and show the menu icon */
-@media only screen and (max-width: 950px) {
-  .header-links {
-    display: none;
-  }
-  .menu-icon {
-    text-align: center;
-    justify-content: center;
-    display: block;
-    font-size: 24px;
-    cursor: pointer;
-    margin-right: 20px;
-  }
-}
-.header-links.show {
-  text-align: center;
-  margin: 0 auto;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-  height: 100%;
-}
-.centered {
-  display: flex;
-  justify-content: center;
-}
-
-/* Introduction Texts, sections */
-.about-text {
-  background-color: #f8f8f8;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  max-width: 1000px;
-  margin: 0 auto;
-  padding-bottom: 5px;
-  padding: 50px;
-  line-height: 1.6;
-  text-align: justify;
-}
-
-.about-text p {
-  margin-bottom: 20px;
-}
-
-/* Book Recommendation */
-
-.book-header1,
-.book-header2 {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-  font-size: 24px;
-  line-height: 1.4;
-  text-align: center;
-  background-color: #f8f8f8;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.book-showcase {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.book-panel-showcase {
-  max-width: 1000px;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
-
-.book-links {
-  text-decoration: none;
-}
-
-.book-panel {
-  letter-spacing: 4px;
-  width: calc(1000px - 70%);
-  margin: 10px;
-  text-align: center;
-  padding: 2px;
-  background-color: #f8f8f8;
-  border-radius: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.book-panel img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-.book-panel p {
-  color: var(--bg-2others);
-  margin: 0;
-  font-size: 16px;
-}
-
 /* Slideshow Top-panel Animation */
 
 .slideshow-container,
 .mySlides img {
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   margin: auto;
   object-fit: cover;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+  margin-bottom: 100px;
 }
 
 /* Hide the images by default */
@@ -281,6 +86,217 @@ header:hover {
   to {
     opacity: 1;
   }
+}
+
+.max-width {
+  max-width: 1000px;
+  margin: 0 auto; /* This centers the div horizontally */
+  text-align: center; /* This centers the content inside the div */
+}
+
+/* ABOUT-ME.HTML */
+/* ABOUT-ME.HTML */
+/* ABOUT-ME.HTML */
+
+.about-container {
+  inline-size: 70%;
+  margin: 0 auto;
+  padding-left: 20px;
+  margin-top: 100px;
+}
+.about-container h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 33px;
+  line-height: 48px;
+  text-align: left;
+  padding-left: 16px;
+}
+.about-container p {
+  margin: auto;
+  padding: 20px;
+  text-align: justify;
+  font-size: 20px;
+  outline-offset: 2px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  line-height: 34px;
+}
+
+/* END OF ABOUT-ME.HTML */
+
+/* Top of the page / Navigation Links */
+/* styles for all screens */
+
+header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 60px;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 2px 10px var(--bg-v3-bg);
+}
+
+header:hover {
+  box-shadow: 0px 8px 15px var(--bg-v4-bg);
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.links li {
+  padding: 18px;
+  font-size: 16px;
+}
+
+.links li:first-child {
+  margin-right: auto;
+  text-align: left;
+  font-size: 20px;
+}
+
+ul li.menu a {
+  text-align: right;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
+
+header ul li a:hover {
+  color: #6e5757;
+}
+
+/* Hide the header links and show the menu icon */
+@media only screen and (max-width: 950px) {
+  .links {
+    display: none;
+  }
+}
+
+.menu-icon {
+  display: none;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 950px) {
+  .menu-icon {
+    display: block;
+  }
+}
+
+/* My Book */
+
+.my-book-panel-showcase {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
+.my-book-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 451px;
+  height: 760px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+}
+
+.my-book-panel img {
+  height: 675px;
+  width: 423px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.my-book-panel p,
+.book-description p {
+  color: var(--bg-2others);
+  margin: 0;
+  font-size: 16px;
+}
+
+.book-description {
+  flex-grow: 1;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  background-color: #f8f8f8;
+  border-radius: 80px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.book-description p {
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 40px;
+}
+
+/* Book Recommendation */
+
+.book-recommendations h1 {
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  font-size: 32px;
+}
+.book-recommendations h2 {
+  margin: 40px auto;
+  padding: 10px;
+  font-size: 24px;
+  line-height: 1.4;
+  text-align: center;
+  background-color: #f8f8f8;
+  border-radius: 60px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Add a shadow to the bottom */
+}
+
+.book-recommendations ul {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Add a shadow to the bottom */
+}
+
+.book-recommendations li {
+  text-align: left;
+  margin: 10px auto;
+  padding-left: 20px;
+}
+
+.book-recommendations li:first-child {
+  padding-top: 20px;
+}
+
+.book-recommendations li:last-child {
+  padding-bottom: 20px;
 }
 
 /* Footer Styles */

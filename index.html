@@ -5,36 +5,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Welcome | Dennis Daniel</title>
+  <title>Home | Denis Daniel</title>
 
   <meta name="description" content="HTML5 content">
-  <meta name="author" content="Dennis Daniel">
-  <meta property="og:title" content="Welcome | Dennis Daniel">
+  <meta name="author" content="Denis Daniel">
+  <meta property="og:title" content="Welcome | Denis Daniel">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://example.com">
   <meta property="og:description" content="Cool">
   <meta property="og:image" content="https://example.com/image.png">
 
-  <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" href="favicon/favicon-16x16.png">
+  <link rel="icon" href="favicon/favicon-16x16.png" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
   <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Cinzel|Shadows+Into+Light+Two" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
 
   <link href="styles.css" rel="stylesheet">
   <script src="script.js" defer></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Raleway:wght@300;600&display=swap"
+    rel="stylesheet">
 </head>
 
 <header>
-<!-- Add this inside the header element -->
+  <!-- >>REMINDER // Always in the HEADER, for any different HTML file -->
   <nav>
-    <ul class="header-links">
-      <li><a href="index.html">About</a></li>
-      <li><a href="javascript:void(0)" disabled>My book (unavailable)</a></li>
+    <ul class="links">
+      <li><a href="about-me.html">DENIS B. DANIEL</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="javascript:void(0)">The Metaphysical Dionysius</a></li>
       <li><a href="https://twitter.com/AesthDennis" target="_blank" rel="noopener">Twitter</a></li>
       <li><a href="https://www.personality-database.com/user/650386" target="_blank" rel="noopener">Personality
           Database</a></li>
       <li><a href="https://www.youtube.com/@aesthdennis/about" target="_blank" rel="noopener">YouTube</a></li>
+      <li class="menu"><a href="javascript:void(0)" onclick="toggleMenu()">Menu</a></li>
     </ul>
     <div class="menu-icon">
       <i class="fa fa-bars"></i>
@@ -47,103 +56,143 @@
   <div class="slideshow-container">
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
-      <img src="images/nietzsche.jpg" style="width:100%">
+      <img src="images/1.jpg" style="width:100%">
     </div>
     <div class="mySlides fade">
-      <img src="images/deathofsocrates.jpg" style="width:100%">
+      <img src="images/2.jpg" style="width:100%">
     </div>
     <div class="mySlides fade">
-      <img src="images/diogenes.jpg" style="width:100%">
+      <img src="images/3.jpg" style="width:100%">
     </div>
     <div class="mySlides fade">
-      <img src="images/nietzsche2.jpg" style="width:100%">
+      <img src="images/4.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/5.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/6.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/7.jpg" style="width:100%">
     </div>
   </div>
 
-  <main>
-    <p class="about-text">
-      Greetings, my name is Dennis. I'm a 20 year-old intuitive introvert and an independent student of
-      metaphysics, psychological functions theory, and existential philosophy; I'm also a neurotic thinker,
-      writer, and developer.
-    </p>
-  </main>
+  <div class="max-width"> <!-- WHOLE CONTENT ON BODY -->
 
-  <h2 class="book-header1">Analytical Psychology, Psychological Functions and Philosophical Literature</h2>
-  <h3 class="book-header2">Book Recommendations</h3>
-
-  <div class="book-panel-showcase">
-    <div class="book-panel">
-      <img src="book_covers/beyondgoodandevil.jpg" alt="Beyond Good and Evil">
-      <a class="book-links" href="https://en.wikipedia.org/wiki/Beyond_Good_and_Evil" target="blank">
-        <p class="Title">Beyond Good and Evil</p>
-        <p class="Author">Friedrich Nietzsche</p>
-      </a>
+    <div class="my-book-panel-showcase">
+      <div class="my-book-panel">
+        <a class="book-links" href="javascript:void(0)" target="blank">
+          <img src="images/front.jpg" alt="The Metaphysical Dionysius"></a>
+        <p>The Metaphysical Dionysius</p>
+        <p>Denis B. Daniel</p>
+      </div>
     </div>
 
-    <div class="book-panel">
-      <img src="book_covers/crime.png" alt="Crime and Punishment">
-      <a class="book-links" href="https://en.wikipedia.org/wiki/Crime_and_Punishment" target="_blank">
-        <p class="Title">Crime and Punishment</p>
-        <p class="Author">Fyodor Dostoevsky</p>
-      </a>
+    <div class="book-description">
+      <p>The Metaphysical Dionysius is an amalgamation of philosophical musings, introspective ideals, and a departure
+        from traditional conventions, all through the lens of the protagonist, Dionysius — an embodiment of the author's
+        unconscious desires, characterized by contradiction, neurosis, and delusion. This fictional exploration of
+        metaphysics is not bound by linear objectives, but rather flows as a continuous stream of consciousness,
+        encompassing the author's aspiration for a heightened perception and understanding.</p>
+      <p>The book offers readers an intellectual and philosophical odyssey, provoking contemplation on the intricacies
+        of the human experience and inviting them to challenge their own perceptions of reality. It is a captivating
+        work that immerses readers in a world of profound ideas, prompting reflection long after the final page has been
+        turned.</p>
+      <p>Within this fictionary work, readers embark on a journey of introspection and abstract contemplation,
+        inviting them to ponder the intricacies of existence, the boundaries of human comprehension, and the
+        significance of intuition in navigating the mysteries of the unknown.</p>
     </div>
 
-    <div class="book-panel">
-      <img src="book_covers/fallintotime.jpg" alt="Fall into Time">
-      <a class="book-links" href="https://ro.wikipedia.org/wiki/Emil_Cioran" target="blank">
-        <p class="Title">Fall into Time | Caderea in Timp</p>
-        <p class="Author">Emil M. Cioran</p>
-      </a>
-    </div>
+    <div class="book-recommendations">
+      <h1>Meaning in the Modern World</h1>
+      <div class="book-description">
+        <p>As we stand on the precipice of an era where the belief in God seems to have waned in the hearts of many, and
+          methodical religion gradually loses its grip, it is crucial to recall that the profound essence of
+          Christianity does not solely reside in its metaphysical dogmas, but rather in the cultural treasures that it
+          has nurtured throughout history.</p>
 
-    <div class="book-panel">
-      <img src="book_covers/aristotlemeta.jpg" alt="Metaphysics">
-      <a class="book-links" href="https://en.wikipedia.org/wiki/Metaphysics_(Aristotle)" target="blank">
-        <p class="Title">Metaphysics</p>
-        <p class="Author">Aristotle</p>
-      </a>
-    </div>
+        <p>While the tenets and doctrines of Christianity may have played a significant role in shaping its identity, it
+          is the prosperous tapestry of art, literature, music, architecture, and societal values that have woven an
+          enduring cultural legacy. The masterpieces of Renaissance art, the haunting chants of Gregorian plainsong, and
+          the awe-inspiring cathedrals and basilicas that have stood for centuries—these are the articulations of a
+          vibrant Christian culture that transcends sheer theological beliefs.</p>
 
-    <div class="book-panel">
-      <img src="book_covers/notesfromunderground.jpg" alt="Notes from Underground">
-      <a class="book-links" href="https://en.wikipedia.org/wiki/Notes_from_Underground" target="blank">
-        <p class="Title">Notes from Underground</p>
-        <p class="Author">Fyodor Dostoevsky</p>
-      </a>
-    </div>
+        <p>By delving into the richness of Christian culture, we can find inspiration, meaning, and a connection to
+          something greater than our mere selves — a testament to the enduring power of its intuitive, intellectual, and
+          moral contributions.</p>
+      </div>
 
-    <div class="book-panel">
-      <img src="book_covers/philosophicalinvestigations.jpg" alt="Philosophical Investigations">
-      <a class="book-links" href="https://en.wikipedia.org/wiki/Philosophical_Investigations" target="blank">
-        <p class="Title">Philosophical Investigations</p>
-        <p class="Author">Ludwig Wittgenstein</p>
-      </a>
-    </div>
+      <h2>Modern and Contemporary Philosophy</h2>
+      <ul>
+        <li>Friedrich Nietzsche: "Thus Spoke Zarathustra"</li>
+        <li>Friedrich Nietzsche: "Beyond Good and Evil"</li>
+        <li>Friedrich Nietzsche: "On the Genealogy of Morals"</li>
+        <li>Friedrich Nietzsche: "The Antichrist"</li>
+        <li>Friedrich Nietzsche: "The Gay Science"</li>
+        <li>Friedrich Nietzsche: "The Will to Power"</li>
+        <li>Ludwig Wittgenstein: "Tractatus Logico-Philosophicus"</li>
+        <li>Ludwig Wittgenstein: "Philosophical Investigations"</li>
+        <li>Jordan Peterson: "Maps of Meaning"</li>
+        <li>Albert Camus: "The Stranger"</li>
+        <li>Martin Heidegger: "Being and Time"</li>
+        <li>Søren Kierkegaard: "Either/Or"</li>
+        <li>Emil Cioran: "Fall into Time"</li>
+        <li>Mircea Eliade: "The Sacred and the Profane: The Nature of Religion"</li>
+        <li>Alfred North Whitehead and Bertrand Russell: "Principia Mathematica" (Requires a rigorous foundation for mathematics.)</li>
+      </ul>
 
-    <div class="book-panel">
-      <img src="book_covers/tractatus.png" alt="Tractatus Logico-Philosophicus">
-      <a class="book-links" href="https://en.wikipedia.org/wiki/Tractatus_Logico-Philosophicus">
-        <p class="Title">Tractatus Logico-Philosophicus</p>
-        <p class="Author">Ludwig Wittgenstein</p>
-      </a>
-    </div>
+      <h2>Classical Philosophy</h2>
+      <ul>
+        <li>Plato: "The Symposium"</li>
+        <li>Plato: "Protagoras"</li>
+        <li>Marcus Aurelius: "Meditations"</li>
+        <li>Aristotle: "Metaphysics"</li>
+        <li>Xenophon: "Anabasis"</li>
+        <li>Seneca: "Moral Letters to Lucilius"</li>
+        <li>Epictetus: "Discourses"</li>
+      </ul>
 
-    <div class="book-panel">
-      <img src="book_covers/types.jpg" alt="Psychological Types">
-      <a class="book-links" href="https://en.wikipedia.org/wiki/Psychological_Types" target="blank">
-        <p class="Title">Psychological Types</p>
-        <p class="Author">Carl Gustav Jung</p>
-      </a>
-    </div>
+      <h2>Political Philosophy</h2>
+      <ul>
+        <li>Milton Friedman: "Free to Choose"</li>
+        <li>Milton Friedman: "Capitalism and Freedom"</li>
+        <li>Adam Smith: "The Wealth of Nations"</li>
+        <li>Adam Smith: "The Theory of Moral Sentiments"</li>
+        <li>Ludwig von Mises: "Human Action: A Treatise on Economics"</li>
+        <li>Ludwig von Mises: "Liberalism: In the Classical Tradition"</li>
+        <li>Murray N. Rothbard: "Man, Economy, and State"</li>
+	      <li>Murray N. Rothbard: "The Ethics of Liberty"</li>
+      </ul>
 
-    <div class="book-panel">
-      <img src="book_covers/unconscious.jpg" alt="Psychology of the Unconscious">
-      <a class="book-links" href="https://en.wikipedia.org/wiki/Psychology_of_the_Unconscious">
-        <p class="Title">Psychology of the Unconscious</p>
-        <p class="Author">Carl Gustav Jung</p>
-      </a>
-    </div>
+      <h2>Literature</h2>
+      <ul>
+        <li>The Bible: "Genesis, Exodus and the New Testament"</li>
+        <li>William Shakespeare: "Romeo and Juliet"</li>
+        <li>William Shakespeare: "Hamlet"</li>
+        <li>Fyodor Dostoevsky: "Crime & Punishment"</li>
+        <li>Fyodor Dostoevsky: "Notes from Underground"</li>
+        <li>Fyodor Dostoevsky: "Demons"</li>
+        <li>Fyodor Dostoevsky: "The Idiot"</li>
+      </ul>
 
+      <h2>Analytical Psychology and Psychoanalysis</h2>
+      <ul>
+        <li>Carl Jung: "Two Essays on Analytical Psychology"</li>
+        <li>Carl Jung: "Psychology and Alchemy"</li>
+        <li>Carl Jung: "Psychological Types"</li>
+        <li>Carl Jung: "Psychology of the Unconscious"</li>
+        <li>Sigmund Freud: "The Interpretation of Dreams"</li>
+        <li>Sigmund Freud: "The Uncanny"</li>
+      </ul>
+
+      <h2>Psychology and Self-help</h2>
+      <ul>
+        <li>Jordan Peterson: "12 Rules for Life"</li>
+        <li>Jordan Peterson: "Beyond Order"</li>
+      </ul>
+
+    </div>
   </div>
 </body>
 
@@ -164,10 +213,11 @@
 </div>
 </div>
 </div>
-
+</div>
 <footer>
   <div class="copyright">
     <p>Technologies used: HTML5, CSS3, JS, Basic PhP / SQL</p>Author: Dennis Daniel</p>&copy; 🤍</p>
   </div>
 </footer>
+
 </html>

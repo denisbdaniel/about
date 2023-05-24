@@ -13,7 +13,7 @@ function showSlides() {
     slideIndex = 1;
   }
   slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change image every 5 seconds, oh god
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
 
 const form = document.querySelector("form");
@@ -26,9 +26,8 @@ form.addEventListener("submit", (event) => {
 });
 
 // Get the menu icon and header links elements
-const menuIcon = document.querySelector(".menu-icon");
-const headerLinks = document.querySelector(".header-links");
 
-menuIcon.addEventListener("click", function () {
-  headerLinks.classList.toggle("centered");
-});
+function toggleMenu() {
+  var links = document.querySelector(".links");
+  links.classList.toggle("active");
+}
