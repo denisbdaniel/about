@@ -36,26 +36,6 @@ body {
   margin: 0 auto;
 }
 
-h1 {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-h4 {
-  font-size: 14px;
-  font-weight: 700;
-}
-
 /* Slideshow Top-panel Animation */
 
 .slideshow-container,
@@ -94,36 +74,6 @@ h4 {
   text-align: center; /* This centers the content inside the div */
 }
 
-/* ABOUT-ME.HTML */
-/* ABOUT-ME.HTML */
-/* ABOUT-ME.HTML */
-
-.about-container {
-  inline-size: 70%;
-  margin: 0 auto;
-  padding-left: 20px;
-  margin-top: 100px;
-}
-.about-container h1 {
-  font-family: "Raleway", sans-serif;
-  font-size: 33px;
-  line-height: 48px;
-  text-align: left;
-  padding-left: 16px;
-}
-.about-container p {
-  margin: auto;
-  padding: 20px;
-  text-align: justify;
-  font-size: 20px;
-  outline-offset: 2px;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  list-style: none;
-  line-height: 34px;
-}
-
-/* END OF ABOUT-ME.HTML */
 
 /* Top of the page / Navigation Links */
 /* styles for all screens */
@@ -426,3 +376,63 @@ footer {
 .copyright {
   margin-top: 30px;
 }
+
+
+
+/* ABOUT-ME.HTML */
+/* ABOUT-ME.HTML */
+/* ABOUT-ME.HTML */
+
+.about-panel-showcase {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 150px;
+  margin: 0 auto;
+}
+
+.about-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 550px;
+  height: 720px;
+  background-color: #f8f8f8;
+  border-radius: 40px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+}
+
+.about-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  width: 1000px;
+  height: 720px;
+  background-color: #f8f8f8;
+  border-radius: 40px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+}
+
+.about-description p {
+  margin: auto;
+  padding: 20px;
+  text-align: justify;
+  font-size: 16px;
+  outline-offset: 2px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  line-height: 34px;
+}
+
+/* END OF ABOUT-ME.HTML */
