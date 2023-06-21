@@ -3,10 +3,11 @@
   --bg-background-color: #ffffff;
   --bg-v1-bg: #eeeeee;
   --bg-v2-bg: #caebec;
-  --bg-v3-bg: #b9b9b9;
+  --bg-footer-bg: #1e1e1e;
+  --bg-v3-bg: #808080;
   --bg-v4-bg: #999999;
-  --bg-v5-bg: #add8e6;
-  --bg-shades: #d4af37;
+  --bg-v5-bg: #42a8ca;
+  --bg-shades: #8A6A42;
   --bg-others: #f5deb3;
   --bg-2others: #8b4513;
   --transition-speed: 600ms;
@@ -85,7 +86,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  height: 60px;
+  height: 70px;
   transition: box-shadow 0.3s ease-in-out;
   box-shadow: 0px 2px 10px var(--bg-v3-bg);
 }
@@ -100,7 +101,7 @@ header ul {
   justify-content: center;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0;
+  padding: 3px;
   list-style: none;
 }
 
@@ -126,7 +127,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-  color: #6e5757;
+  color: var(--bg-v5-bg);
 }
 
 /* Hide the header links and show the menu icon */
@@ -164,6 +165,7 @@ header ul li a:hover {
   width: 352px;
   height: 562px;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
 }
 
 .my-book-panel {
@@ -285,17 +287,17 @@ header ul li a:hover {
 .cta {
   text-decoration: none;
   padding: 9px 25px;
-  background-color: var(--bg-v5-bg);
+  background-color: var(--bg-others);
   border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.5s ease 0s;
-  color: var(--text-primary);
+  color: var(--bg-shades);
   margin-bottom: 10px;
 }
 
 .cta:hover {
-  background-color: var(--bg-shades);
+  background-color: var(--bg-v5-bg);
 }
 
 /* styles for screens smaller than 768px */
@@ -313,7 +315,7 @@ header ul li a:hover {
 }
 
 .upper-footer {
-  background-color: var(--bg-v1-bg);
+  background-color: var(--bg-footer-bg);
   color: var(--bg-primary-text);
   margin-top: 30px;
   padding: 40px 0;
@@ -329,10 +331,10 @@ header ul li a:hover {
 
 .upper-footer input[type="email"] {
   display: inline-block;
-  width: 30vh;
+  width: 80vh;
   padding: 10px;
   border: none;
-  border-radius: 4px 0 0 4px;
+  border-radius: 22px 0 22px 0px;
   font-size: 14px;
 }
 
@@ -343,7 +345,7 @@ header ul li a:hover {
   color: #fff;
   border: none;
   padding: 10px 20px;
-  border-radius: 0 4px 4px 0;
+  border-radius: 22px 0 22px 0px;
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -354,8 +356,8 @@ header ul li a:hover {
 }
 
 footer {
-  background-color: var(--bg-v2-bg);
-  color: var(--bg-primary-text);
+  background-color: var(--bg-footer-bg);
+  color: var(--bg-shades);
   padding: 30px 0;
   font-size: 20px;
   font-weight: 400;
