@@ -16,18 +16,32 @@ function showSlides() {
   setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
 
-const form = document.querySelector("form");
-
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const email = form.querySelector('input[type="email"]').value;
-  alert(`Thanks for subscribing with email: ${email}`);
-  form.reset();
-});
-
 // Get the menu icon and header links elements
 
 function toggleMenu() {
   var links = document.querySelector(".links");
   links.classList.toggle("active");
 }
+
+
+function sendLetter() {
+  var name = document.getElementById("name").value;
+  var message = document.getElementById("message").value;
+
+    // Encode the subject and body for the mailto link
+  var subject = "Letter from " + name;
+  var body = message;
+
+   // Construct the mailto link with the encoded subject and body
+  var mailtoLink = "mailto:devotedentity@gmail.com" + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  
+  // Open the default email client with the mailto link
+  window.location.href = mailtoLink;
+}
+
+
+
+
+
+
+

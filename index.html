@@ -199,22 +199,28 @@
     </div>
     </div>
 </div>
+<div class="page-count">
+  <p>1/1 Next»</p>
+</div>
 </body>
 
 <div class="upper-footer">
-  <div class="container">
-    <div class="row">
       <div class="contact-links">
         <a class="cta" href="mailto:devotedentity@gmail.com" target="_blank">Personal Contact</a>
         <a class="cta" href="mailto:denis.barson02@gmail.com" target="_blank">Business Inquiries</a>
       </div>
-    </div>
 
-    <form action="subscribe.php" method="POST">
-      <input type="email" placeholder="Enter your email address">
-      <button type="submit">Subscribe (doesnt work)</button>
-    </form>
+      <form>
+        <h1>Send a Letter</h1>
+        <label for="name">Name:</label>
+        <input type="text" placeholder=" Enter your name here" id="name" name="name" required>
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder=" You will be redirected to your email's 'compose' for further formatting and review." name="message" rows="5" required></textarea>
+        <input type="submit" value="Send" onclick="sendLetter()">
+      </form>
+      
   </div>
+
 </div>
 </div>
 </div>

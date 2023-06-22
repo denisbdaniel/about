@@ -276,12 +276,17 @@ header ul li a:hover {
   padding-bottom: 20px;
 }
 
+.page-count {
+  padding: 10px;
+}
 
+/* Footer Styles */
+/* Footer Styles */
 /* Footer Styles */
 /* styles for all screens */
 
 .contact-links {
-  margin-bottom: 60px;
+  padding: 40px;
 }
 
 .cta {
@@ -293,7 +298,6 @@ header ul li a:hover {
   cursor: pointer;
   transition: background-color 0.5s ease 0s;
   color: var(--bg-shades);
-  margin-bottom: 10px;
 }
 
 .cta:hover {
@@ -317,34 +321,52 @@ header ul li a:hover {
 .upper-footer {
   background-color: var(--bg-footer-bg);
   color: var(--bg-primary-text);
-  margin-top: 30px;
-  padding: 40px 0;
   font-size: 20px;
   font-weight: 600;
   line-height: 1.5;
   text-align: center;
 }
 
-.upper-footer form {
-  text-align: center;
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--bg-shades); /* Set the desired text color */
 }
 
-.upper-footer input[type="email"] {
-  display: inline-block;
-  width: 80vh;
-  padding: 10px;
-  border: none;
-  border-radius: 22px 0 22px 0px;
-  font-size: 14px;
+form h1 {
+  padding-bottom: 40px;
 }
 
-.upper-footer button[type="submit"] {
+.upper-footer input[type="text"] {
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+textarea {
+  resize: none;
+  width: 1000px;
+  margin-top: 10px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Disable textarea dragging */
+textarea::-webkit-resizer {
+  display: none;
+}
+
+.upper-footer input[type="submit"] {
+  margin-top: 10px;
+  width: 80px;
+  height: 40px;
   display: inline-block;
   align-items: center;
   background-color: #555;
   color: #fff;
   border: none;
-  padding: 10px 20px;
   border-radius: 22px 0 22px 0px;
   font-size: 14px;
   cursor: pointer;
@@ -355,18 +377,24 @@ header ul li a:hover {
   background-color: #333;
 }
 
+
+
+
+
+
+
 footer {
   background-color: var(--bg-footer-bg);
   color: var(--bg-shades);
-  padding: 30px 0;
-  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   text-align: center;
 }
 
 .footer-container {
-  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -376,8 +404,16 @@ footer {
 /* Copyright */
 
 .copyright {
-  margin-top: 30px;
+  margin-top: 20px;
 }
+
+
+
+
+
+
+
+
 
 
 
