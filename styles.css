@@ -80,7 +80,7 @@ body {
 /* styles for all screens */
 
 header {
-  background-color: #fff;
+  background-color: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -136,6 +136,25 @@ header ul li a:hover {
     display: none;
   }
 }
+
+.logo {
+  position: relative;
+  height: 100%;
+}
+
+.logo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+  height: auto;
+}
+
+
+
+
+
 
 .menu-icon {
   display: none;
@@ -201,28 +220,18 @@ header ul li a:hover {
   font-size: 16px;
 }
 
-.book-description p {
-  color: black;
-  margin: 0;
-  font-size: 18px;
-  line-height: 1.6;
-  text-align: justify;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 
 
 /* Book Recommendation */
 
-.meaning {
+.paragraph {
+  margin-top: 100px;
   background-color: white;
   border-radius: 40px;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
-.meaning h2 {
+.paragraph h2 {
     margin: 40px auto;
     padding: 10px;
     font-size: 24px;
@@ -232,7 +241,7 @@ header ul li a:hover {
     border-radius: 40px;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Add a shadow to the bottom */
 }
-.meaning p {
+.paragraph p {
   font-size: 16px;
   padding: 20px;
   text-align: justify;
@@ -408,15 +417,6 @@ footer {
 }
 
 
-
-
-
-
-
-
-
-
-
 /* ABOUT-ME.HTML */
 /* ABOUT-ME.HTML */
 /* ABOUT-ME.HTML */
@@ -474,3 +474,85 @@ footer {
 }
 
 /* END OF ABOUT-ME.HTML */
+
+
+.dark-mode {
+  background-color: #0a0000;
+  color: #000000;
+}
+
+
+/* MY-BOOKS.HTML */
+/* MY-BOOKS.HTML */
+/* MY-BOOKS.HTML */
+
+
+.book-panel-showcase {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between; /* Adjust the justification as desired */
+  gap: 100px; /* Adjust the gap between book panels as desired */
+}
+
+.book-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 440px;
+  padding-top: 10px;
+  background-color: #f8f8f8;
+  border-radius: 40px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.book-panel img {
+  width: 410px;
+  height: 666px;
+  border-radius: 40px;
+}
+
+
+
+
+
+
+.download-button {
+  margin: 20px;
+  padding: 10px 20px; /* Adjust padding for spacing */
+  border: none; /* Remove the default button border */
+  cursor: pointer; /* Add a cursor pointer on hover */
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.download-button:hover {
+  transition: background-color 0.5s ease 0s;
+}
+
+.download-button:hover .hover-image {
+  opacity: 1; /* Show the image on hover */
+}
+
+.icon {
+  position: relative;
+  display: inline-block;
+}
+
+.icon img {
+  width: 48px; /* Adjust the desired width */
+  height: 48px; /* Adjust the desired height */
+  border-radius: 10px;
+}
+
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; /* Hide the image initially */
+  transition: opacity 0.3s ease; /* Add transition effect */
+}
+
+
