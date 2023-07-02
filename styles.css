@@ -1,5 +1,7 @@
 :root {
   /* Colors */
+  --bg-text-primary: #1A1A1A;
+  --bg-text-header: #333333;
   --bg-background-color: #ffffff;
   --bg-v1-bg: #eeeeee;
   --bg-v2-bg: #caebec;
@@ -30,7 +32,7 @@ body {
     var(--bg-background-color),
     var(--bg-v3-bg)
   );
-  color: var(--text-primary);
+  color: var(--bg-text-primary);
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
@@ -105,6 +107,16 @@ header ul {
   list-style: none;
 }
 
+header ul li a {
+  color: var(--bg-text-header);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+header ul li a:hover {
+  color: var(--bg-v5-bg);
+}
+
 .links li {
   padding: 18px;
   font-size: 16px;
@@ -118,16 +130,6 @@ header ul {
 
 ul li.menu a {
   text-align: right;
-}
-
-header ul li a {
-  text-decoration: none;
-  color: black;
-  transition: color 0.3s ease-in-out;
-}
-
-header ul li a:hover {
-  color: var(--bg-v5-bg);
 }
 
 /* Hide the header links and show the menu icon */
@@ -150,11 +152,6 @@ header ul li a:hover {
   width: 110%;
   height: auto;
 }
-
-
-
-
-
 
 .menu-icon {
   display: none;
