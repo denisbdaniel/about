@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Home | Denis Daniel</title>
 
@@ -11,9 +10,9 @@
   <meta name="author" content="Denis Daniel">
   <meta property="og:title" content="Welcome | Denis Daniel">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://aesthdennis.github.io/About">
-  <meta property="og:description" content="Cool">
-  <meta property="og:image" content="https://example.com/image.png">
+  <meta property="og:url" content="https://denisdaniel.com">
+  <meta property="og:description" content="A website with regards to intellectual works, general portfolios and comprehension of the author.">
+  <meta property="og:image" content="">
 
   <link rel="icon" href="favicon/favicon-16x16.png">
   <link rel="icon" href="favicon/favicon-16x16.png" type="image/svg+xml">
@@ -24,6 +23,7 @@
 
 
   <link href="styles.css" rel="stylesheet">
+  <link href="styles-media.css" rel="stylesheet">
   <script src="script.js" defer></script>
 
   <!-- FONTS -->
@@ -32,22 +32,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Raleway:wght@300;600&display=swap"
     rel="stylesheet">
 </head>
+
 <header>
-  <!-- >>REMINDER // Always in the HEADER, for any different HTML file -->
   <nav>
-    <ul class="links">
-      <li class="logo"><a href="index.html"><img src="images/logo.png"></a></li>
-      <li><a href="about-me.html">About Me</a></li>
-      <li><a href="my-books.html">My Books</a></li>
-      <li><a href="https://twitter.com/AesthDennis" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://www.youtube.com/@aesthdennis/about" target="_blank" rel="noopener">YouTube</a></li>
-      <li class="menu"><a href="javascript:void(0)" onclick="toggleMenu()">Menu</a></li>
-    </ul>
-    <div class="menu-icon">
-      <i class="fa fa-bars"></i>
+    
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fa fa-bars" id="menu-icon"></i>
     </div>
+    <ul class="links" id="menu-links">
+      <li class="logo"><a href="index.html" onclick="toggleMenu()"><img src="images/logo.png"></a></li>
+      <li><a href="about-me.html" onclick="toggleMenu()">About Me</a></li>
+      <li><a href="my-books.html" onclick="toggleMenu()">My Books</a></li>
+      <li><a href="sci.html" onclick="toggleMenu()">Research</a></li>
+      <li><a href="https://twitter.com/AesthDennis" target="_blank" rel="noopener" onclick="toggleMenu()">Twitter</a></li>
+      <li><a href="https://www.youtube.com/@aesthdennis/about" target="_blank" rel="noopener" onclick="toggleMenu()">YouTube</a></li>
+    </ul>
+    
+
   </nav>
 </header>
+
 
 <body>
   <!-- Slideshow container -->
@@ -61,9 +65,7 @@
     </div>
   </div>
 
-
-  <div class="max-width"> <!-- WHOLE CONTENT ON BODY -->
-
+  <main>
     <div class="my-book-panel-showcase">
       <div class="my-book-panel">
         <a class="book-links" href="javascript:void(0)" target="blank">
@@ -77,13 +79,15 @@
           <span style='font-size:19px;line-height:150%;font-family:"Garamond",serif;'>Dionysius: Metaphysicus is an
             amalgamation of philosophical musings, introspective ideals, and a departure from traditional conventions,
             all through the lens of the protagonist, Dionysius<em>&nbsp;</em>&mdash; an embodiment of the author&apos;s
-            unconscious desires, characterized by contradiction, neurosis, and delusion.&nbsp;</span></p>
+            unconscious desires, characterized by contradiction, neurosis, and delusion.&nbsp;</span>
+        </p>
         <p
           style='margin-right:0in;margin-left:0in;font-size:15px;font-family:"Calibri",sans-serif;margin-top:0in;margin-bottom:8.0pt;line-height:150%;text-align:justify;'>
           <span style='font-size:19px;line-height:150%;font-family:"Garamond",serif;'>Dionysius, <em>not to be confused
               with the Greek God &quot;Dionysus&rdquo;</em>, is a metaphysical individual that had been hiding within
             his mind for all of his existence, however, one day, a desire for understanding the external world had
-            struck &mdash; a new hope that seeks a deeper comprehension of the world that surrounds him.</span></p>
+            struck &mdash; a new hope that seeks a deeper comprehension of the world that surrounds him.</span>
+        </p>
         <p
           style='margin-right:0in;margin-left:0in;font-size:15px;font-family:"Calibri",sans-serif;margin-top:0in;margin-bottom:8.0pt;line-height:150%;text-align:justify;'>
           <span style='font-size:19px;line-height:150%;font-family:"Garamond",serif;'>This fictional exploration of
@@ -92,7 +96,8 @@
         </p>
         <p
           style='margin-right:0in;margin-left:0in;font-size:15px;font-family:"Calibri",sans-serif;margin-top:0in;margin-bottom:8.0pt;line-height:150%;text-align:justify;'>
-          <span style='font-size:19px;line-height:150%;font-family:"Garamond",serif;'>&nbsp;</span></p>
+          <span style='font-size:19px;line-height:150%;font-family:"Garamond",serif;'>&nbsp;</span>
+        </p>
       </div>
     </div>
     <div class="my-book-panel-showcase">
@@ -128,7 +133,8 @@
           era where the belief in God seems to have waned in the hearts of many, methodical religion gradually loses its
           grip; yet I am afraid that the death of God is but a wasted sentiment, for these men of modernity cannot help
           but assert a different God, one that encompasses but secular dogmatism, these men are not mere followers
-          &mdash; but whole herds of followers, which we have so often seen before.</span></p>
+          &mdash; but whole herds of followers, which we have so often seen before.</span>
+      </p>
       <p
         style='margin-right:0in;margin-left:0in;font-size:15px;font-family:"Calibri",sans-serif;margin-top:0in;margin-bottom:8.0pt;line-height:150%;text-align:justify;text-indent:.2in;'>
         <span style='font-size:17px;line-height:150%;font-family:"Garamond",serif;'>It is crucial to recall that the
@@ -138,20 +144,23 @@
           and societal values that have woven an enduring cultural legacy. The masterpieces of Renaissance art, the
           chants of Gregorian plainsong, and the awe-inspiring cathedrals and churches that have stood for centuries
           &mdash; these stand as articulations of the vibrant, superior Christian culture that transcends sheer
-          theological beliefs.</span></p>
+          theological beliefs.</span>
+      </p>
       <p
         style='margin-right:0in;margin-left:0in;font-size:15px;font-family:"Calibri",sans-serif;margin-top:0in;margin-bottom:8.0pt;line-height:150%;text-align:justify;text-indent:.2in;'>
         <span style='font-size:17px;line-height:150%;font-family:"Garamond",serif;'>By eliminating the dogmatic element
           and delving into the potency of Christianity, we can find vision, meaning, and a connection to something
           greater than our mere selves &mdash; a connection to metaphysical culture, a testament to the enduring power
-          of its intuitive, intellectual, and moral contributions.</span></p>
+          of its intuitive, intellectual, and moral contributions.</span>
+      </p>
       <p
         style='margin-right:0in;margin-left:0in;font-size:15px;font-family:"Calibri",sans-serif;margin-top:0in;margin-bottom:8.0pt;line-height:150%;text-align:justify;text-indent:.2in;'>
         <span style='font-size:17px;line-height:150%;font-family:"Garamond",serif;'>Secularism has failed my generation
           &mdash; the man of modernity is far too ignorant; incapable of asserting meaning, purpose and a greater vision
           for himself. But for men with a desire for greatness, I may hold an antidote. With a desire for reaching a
           state further than Jupiter itself, an assertion of Christianity, refusal of dogmatism, be it theological or
-          secular, and its synthesis within the individual&rsquo;s perception is required.</span></p>
+          secular, and its synthesis within the individual&rsquo;s perception is required.</span>
+      </p>
     </div>
 
     <div class="book-recommendations">
@@ -228,9 +237,9 @@
         <li>Jordan Peterson: "Beyond Order"</li>
       </ul>
     </div>
-  </div>
-  </div>
-
+    </div>
+    </div>
+  </main>
 </body>
 
 <div class="upper-footer">
@@ -251,7 +260,6 @@
   </form>
 
 </div>
-
 </div>
 </div>
 </div>

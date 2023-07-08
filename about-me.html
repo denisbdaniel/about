@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Home | Denis Daniel</title>
 
@@ -11,9 +10,9 @@
   <meta name="author" content="Denis Daniel">
   <meta property="og:title" content="Welcome | Denis Daniel">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://aesthdennis.github.io/About">
-  <meta property="og:description" content="Cool">
-  <meta property="og:image" content="https://example.com/image.png">
+  <meta property="og:url" content="https://denisdaniel.com">
+  <meta property="og:description" content="A website with regards to intellectual works, general portfolios and comprehension of the author.">
+  <meta property="og:image" content="">
 
   <link rel="icon" href="favicon/favicon-16x16.png">
   <link rel="icon" href="favicon/favicon-16x16.png" type="image/svg+xml">
@@ -24,6 +23,7 @@
 
 
   <link href="styles.css" rel="stylesheet">
+  <link href="styles-media.css" rel="stylesheet">
   <script src="script.js" defer></script>
 
   <!-- FONTS -->
@@ -32,50 +32,52 @@
   <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Raleway:wght@300;600&display=swap"
     rel="stylesheet">
 </head>
+
 <header>
-  <!-- >>REMINDER // Always in the HEADER, for any different HTML file -->
   <nav>
-    <ul class="links">
-      <li class="logo"><a href="index.html"><img src="images/logo.png"></a></li>
-      <li><a href="about-me.html">About Me</a></li>
-      <li><a href="my-books.html">My Books</a></li>
-      <li><a href="https://twitter.com/AesthDennis" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://www.youtube.com/@aesthdennis/about" target="_blank" rel="noopener">YouTube</a></li>
-      <li class="menu"><a href="javascript:void(0)" onclick="toggleMenu()">Menu</a></li>
-    </ul>
-    <div class="menu-icon">
-      <i class="fa fa-bars"></i>
+    
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fa fa-bars" id="menu-icon"></i>
     </div>
+    <ul class="links" id="menu-links">
+      <li class="logo"><a href="index.html" onclick="toggleMenu()"><img src="images/logo.png"></a></li>
+      <li><a href="about-me.html" onclick="toggleMenu()">About Me</a></li>
+      <li><a href="my-books.html" onclick="toggleMenu()">My Books</a></li>
+      <li><a href="sci.html" onclick="toggleMenu()">Research</a></li>
+      <li><a href="https://twitter.com/AesthDennis" target="_blank" rel="noopener" onclick="toggleMenu()">Twitter</a></li>
+      <li><a href="https://www.youtube.com/@aesthdennis/about" target="_blank" rel="noopener" onclick="toggleMenu()">YouTube</a></li>
+    </ul>
+    
+
   </nav>
 </header>
 
+
 <body>
-    <div class="max-width"> <!-- WHOLE CONTENT ON BODY -->
-        <body>
-            <div class="max-width"> <!-- WHOLE CONTENT ON BODY -->
-          
-            <div class="about-panel-showcase">
-              <div class="about-panel">
-                  <img src="images/traits.png" alt="Personality Traits"></a>
-                <p>OCEAN model taken from my autoethnographic scientific paper</p>
-              </div>
-              <div class="about-description">
-                <p>I am a 20-year-old intuitive introvert; independent student of existential metaphysics and analytical
-                  psychology.</p>
-          
-                <p>I am pursuing self-directed studies in both humanities and STEM fields without the involvement of any formal
-                  educational institution, department, or college. In humanities, my focus is on two areas: existential
-                  metaphysics and psychoanalytical theory concerning Jungian cognitive functions and personality traits. In STEM,
-                  I am studying front-end web development, including HTML5, CSS3, and PHP; as well as programming languages such
-                  as JavaScript and Python.</p>
-          
-                <p>In the future, I aspire to start a company that prioritizes offering high-quality services to clients, such as
-                  modern, efficient, and aesthetically pleasing website development, maintenance, and plugins. The company would
-                  also fund, assist, and develop AI that can optimize and increase efficiency for both current systems and
-                  practices; the goal is to make our services and procedures as seamless and efficient as possible, preparing us
-                  for the next century.</p>
-              </div>
-            </div>
-          </body>
+  <main>
+    <div class="about-panel-showcase">
+      <div class="about-panel">
+        <img src="images/traits.png" alt="Personality Traits"></a>
+        <p>OCEAN model taken from my autoethnographic scientific paper</p>
+      </div>
+      <div class="about-description">
+        <p>I am a 20-year-old intuitive introvert; independent student of existential metaphysics and analytical
+          psychology.</p>
+
+        <p>I am pursuing self-directed studies in both humanities and STEM fields without the involvement of any formal
+          educational institution, department, or college. In humanities, my focus is on two areas: existential
+          metaphysics and psychoanalytical theory concerning Jungian cognitive functions and personality traits. In
+          STEM,
+          I am studying front-end web development, including HTML5, CSS3, and PHP; as well as programming languages such
+          as JavaScript and Python.</p>
+
+        <p>In the future, I aspire to start a company that prioritizes offering high-quality services to clients, such
+          as
+          modern, efficient, and aesthetically pleasing website development, maintenance, and plugins. The company would
+          also fund, assist, and develop AI that can optimize and increase efficiency for both current systems and
+          practices; the goal is to make our services and procedures as seamless and efficient as possible, preparing us
+          for the next century.</p>
+      </div>
     </div>
+  </main>
 </body>

@@ -38,8 +38,6 @@ function sendLetter() {
   // Open the default email client with the mailto link
   window.location.href = mailtoLink;
 }
-
-
         function toggleDarkMode() {
             var body = document.body;
             body.classList.toggle("dark-mode");
@@ -48,10 +46,4 @@ function sendLetter() {
 
 
 
-
-
-
-
-
-
-
+  
