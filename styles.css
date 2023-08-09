@@ -172,54 +172,67 @@ ul li.menu a {
   margin-right: 20px;
 }
 
-/* My Book */
-
-.my-book-panel-showcase {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+.book-panel-showcase {
   padding-top: 100px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Adjust the justification as desired */
+  gap: 40px; /* Adjust the gap between book panels as desired */
 }
 
-.my-book-panel img {
-  width: 352px;
-  height: 562px;
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-}
-
-.my-book-panel {
+.book-panel {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 450px;
-  height: 658px;
+  width: 440px;
+  padding-top: 10px;
   background-color: #f8f8f8;
   border-radius: 20px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  margin-bottom: 40px;
 }
 
-.book-description {
-  padding: 20px;
-  /* Background */
-  background-color: #f8f8f8;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  width: 700px;
-  height: 658px;
+.book-panel img {
+  width: 280px;
+  height: 450px;
+  border-radius: 20px;
 }
 
-.my-book-panel p {
-  padding-top: 10px;
-  line-height: 1;
-  font-size: 16px;
+.download-button {
+  margin: 20px;
+  padding: 10px 20px; /* Adjust padding for spacing */
+  border: none; /* Remove the default button border */
+  cursor: pointer; /* Add a cursor pointer on hover */
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.download-button:hover {
+  transition: background-color 0.5s ease 0s;
+}
+
+.download-button:hover .hover-image {
+  opacity: 1; /* Show the image on hover */
+}
+
+.icon {
+  position: relative;
+  display: inline-block;
+}
+
+.icon img {
+  width: 48px; /* Adjust the desired width */
+  height: 48px; /* Adjust the desired height */
+  border-radius: 10px;
+}
+
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; /* Hide the image initially */
+  transition: opacity 0.3s ease; /* Add transition effect */
 }
 
 /* Book Recommendation */
@@ -457,69 +470,54 @@ footer {
   color: #000000;
 }
 
-/* MY-BOOKS.HTML */ /* MY-BOOKS.HTML */ /* MY-BOOKS.HTML */
+/* My-Books.html */
 
-.book-panel-showcase {
-  padding-top: 100px;
+.my-book-panel-showcase {
   display: flex;
-  justify-content: space-between; /* Adjust the justification as desired */
-  gap: 100px; /* Adjust the gap between book panels as desired */
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 100px;
+  margin: 0 auto;
 }
 
-.book-panel {
+.my-book-panel img {
+  width: 352px;
+  height: 562px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.my-book-panel {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 440px;
-  padding-top: 10px;
+  width: 450px;
+  height: 658px;
   background-color: #f8f8f8;
   border-radius: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
 }
 
-.book-panel img {
-  width: 410px;
-  height: 666px;
-  border-radius: 20px;
-}
-
-.download-button {
-  margin: 20px;
-  padding: 10px 20px; /* Adjust padding for spacing */
-  border: none; /* Remove the default button border */
-  cursor: pointer; /* Add a cursor pointer on hover */
-  border-radius: 20px;
-  background-color: white;
+.book-description {
+  padding: 20px;
+  /* Background */
+  background-color: #f8f8f8;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  width: 700px;
+  height: 658px;
 }
 
-.download-button:hover {
-  transition: background-color 0.5s ease 0s;
-}
-
-.download-button:hover .hover-image {
-  opacity: 1; /* Show the image on hover */
-}
-
-.icon {
-  position: relative;
-  display: inline-block;
-}
-
-.icon img {
-  width: 48px; /* Adjust the desired width */
-  height: 48px; /* Adjust the desired height */
-  border-radius: 10px;
-}
-
-.hover-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0; /* Hide the image initially */
-  transition: opacity 0.3s ease; /* Add transition effect */
+.my-book-panel p {
+  padding-top: 10px;
+  line-height: 1;
+  font-size: 16px;
 }
 
 /* SCI.HTML */ /* SCI.HTML */ /* SCI.HTML */
@@ -603,3 +601,4 @@ footer {
 .paper-link:hover {
   text-decoration: underline;
 }
+
