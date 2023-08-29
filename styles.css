@@ -472,6 +472,7 @@ footer {
 
 /* My-Books.html */
 
+
 .my-book-panel-showcase {
   display: flex;
   align-items: flex-start;
@@ -512,6 +513,21 @@ footer {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   width: 700px;
   height: 658px;
+  
+  /* Content Styles */
+  margin-right: 0in;
+  margin-left: 0in;
+  margin-top: 0in;
+  margin-bottom: 8.0pt;
+  text-align: justify;
+}
+
+.book-description p {
+  font-size: 18px;
+  line-height: 150%;
+  font-family: "Garamond", serif;
+  text-indent: 20px; /* Adjust the value to control the indentation */
+  margin-bottom: 16px; /* Adjust the value to control spacing between paragraphs */
 }
 
 .my-book-panel p {
