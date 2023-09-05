@@ -6,7 +6,7 @@
   --bg-v1-bg: #eeeeee;
   --bg-v2-bg: #caebec;
   --bg-footer-bg: #1e1e1e;
-  --bg-v3-bg: #dddddd;
+  --bg-v3-bg: #dbdbdb;
   --bg-v4-bg: #999999;
   --bg-v5-bg: #42a8ca;
   --bg-shades: #8a6a42;
@@ -62,7 +62,6 @@ a:hover {
   transition: color 0.3s ease-in-out;
 }
 
-
 /* Slideshow Top-panel Animation */
 
 .slideshow-container,
@@ -103,13 +102,12 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: white;
+  background-color: #ffffff;
   z-index: 1000;
   height: 70px;
   transition: box-shadow 0.3s ease-in-out;
   box-shadow: 0px 2px 10px var(--bg-v3-bg);
 }
-
 
 header:hover {
   box-shadow: 0px 8px 15px var(--bg-v4-bg);
@@ -204,7 +202,7 @@ ul li.menu a {
   border: none; /* Remove the default button border */
   cursor: pointer; /* Add a cursor pointer on hover */
   border-radius: 20px;
-  background-color: white;
+  background-color: #ffffff;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -239,7 +237,7 @@ ul li.menu a {
 
 .paragraph {
   margin-top: 100px;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
@@ -249,7 +247,6 @@ ul li.menu a {
   font-size: 24px;
   line-height: 1.4;
   text-align: center;
-  background-color: #f8f8f8;
   border-radius: 20px;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Add a shadow to the bottom */
 }
@@ -472,7 +469,6 @@ footer {
 
 /* My-Books.html */
 
-
 .my-book-panel-showcase {
   display: flex;
   align-items: flex-start;
@@ -513,12 +509,12 @@ footer {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   width: 700px;
   height: 658px;
-  
+
   /* Content Styles */
   margin-right: 0in;
   margin-left: 0in;
   margin-top: 0in;
-  margin-bottom: 8.0pt;
+  margin-bottom: 8pt;
   text-align: justify;
 }
 
@@ -550,9 +546,8 @@ footer {
   text-align: left; /* Adjust this property based on your desired alignment */
 }
 
-
 .image img {
-  display:block;
+  display: block;
   margin-left: 20px;
   margin-bottom: 10px;
   width: 56px;
@@ -563,7 +558,6 @@ footer {
   position: relative;
   z-index: 1;
 }
-
 
 .paper-entry {
   background-color: #fff;
@@ -600,7 +594,6 @@ footer {
   font-weight: normal;
 }
 
-
 .paper-abstract {
   line-height: 1.5;
   margin-bottom: 10px;
@@ -617,4 +610,3 @@ footer {
 .paper-link:hover {
   text-decoration: underline;
 }
-
