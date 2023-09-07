@@ -256,10 +256,16 @@ ul li.menu a {
   text-align: justify;
 }
 
-.book-recommendations h1 {
-  margin: 0 auto;
+/*READING-LIST.HTML*/
+
+.book-recommendations {
+  margin: 0 auto; /* Center the entire section */
   padding-top: 100px;
   padding-bottom: 50px;
+  max-width: 800px; /* Set a maximum width if needed */
+}
+
+.book-recommendations h1 {
   font-size: 32px;
 }
 
@@ -270,13 +276,13 @@ ul li.menu a {
   text-align: center;
   background-color: #f8f8f8;
   border-radius: 20px;
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Add a shadow to the bottom */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .book-recommendations ul {
   background-color: #f8f8f8;
   border-radius: 20px;
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Add a shadow to the bottom */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .book-recommendations li {
@@ -293,6 +299,7 @@ ul li.menu a {
 .book-recommendations li:last-child {
   padding-bottom: 20px;
 }
+
 
 .page-count {
   padding: 10px;
@@ -329,17 +336,6 @@ ul li.menu a {
   font-weight: 600;
   line-height: 1.5;
   text-align: center;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--bg-shades); /* Set the desired text color */
-}
-
-form h1 {
-  padding-bottom: 40px;
 }
 
 .upper-footer input[type="text"] {
@@ -383,8 +379,8 @@ textarea::-webkit-resizer {
 footer {
   background-color: var(--bg-footer-bg);
   color: var(--bg-shades);
-  padding-top: 30px;
-  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 15px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
