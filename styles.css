@@ -427,33 +427,6 @@ footer {
   margin-bottom: 40px;
 }
 
-.about-description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: justify;
-  width: 1000px;
-  height: 720px;
-  background-color: #f8f8f8;
-  border-radius: 20px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  margin-bottom: 40px;
-}
-
-.about-description p {
-  margin: auto;
-  padding: 20px;
-  text-align: justify;
-  font-size: 16px;
-  outline-offset: 2px;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  list-style: none;
-  line-height: 34px;
-}
 
 /* END OF ABOUT-ME.HTML */
 
