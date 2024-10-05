@@ -269,13 +269,21 @@ ul li.menu a {
 }
 
 .book-recommendations h2 {
-  padding: 10px;
+  margin-top: 50px;
+  padding: 50px;
   font-size: 24px;
   line-height: 1.4;
   text-align: center;
   background-color: #f8f8f8;
   border-radius: 20px;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.book-recommendations h3 {
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  padding: 20px;
 }
 
 .book-recommendations ul {
@@ -289,6 +297,15 @@ ul li.menu a {
   text-align: left;
   margin: 10px auto;
   padding-left: 20px;
+}
+
+.book-recommendations p {
+  font-size: 14px;
+  text-align: center;
+  margin: 10px auto;
+  margin-bottom: 30px;
+  padding: 10px;
+  max-width: 600px;
 }
 
 .book-recommendations li:first-child {
